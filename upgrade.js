@@ -12,21 +12,8 @@ window.addEventListener("load", () => {
 
   addNftContainer();
   waitForAndRemoveButton();
-
-  // setTimeout(() => {
-  //   const buttons = document.querySelectorAll("button");
-  //
-  //   // Найти нужную кнопку
-  //   const targetButton = Array.from(buttons).find((button) => {
-  //     const span = button.querySelector("span"); // Проверяем, есть ли внутри <span>
-  //     console.log(span, "span");
-  //     return span && span.textContent.trim() === "Connect"; // Сравниваем текст
-  //   });
-  //
-  //   console.log(targetButton, "targetButton");
-  //
-  //   targetButton.style.display = "none";
-  // }, 1500);
+  appendModalMarkup();
+  MicroModal.init();
 });
 
 function waitForAndRemoveButton() {
@@ -68,6 +55,39 @@ function waitForAndRemoveButton() {
   checkAndRemoveButton();
 }
 
+function appendModalMarkup() {
+  const modalMarkup = `
+     <div class="modal micromodal-slide" id="modal-1" aria-hidden="true">
+    <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+      <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+        <header class="modal__header">
+          <h2 class="modal__title" id="modal-1-title">
+            Base Logos
+          </h2>
+          <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+        </header>
+        <main class="modal__content" id="modal-1-content">
+        	<video class="" loop autoplay muted height="250" width="250">
+          	<source src="_next/static/base-logos.mp4" type="video/mp4">
+					</video>
+          <p>
+          Base Logos is a collection of 10,000 Base logos colored with Base Colors. The owner of the Base Color used in the Base Logo receives a share of the mint revenue.
+<!--            Try hitting the <code>tab</code> key and notice how the focus stays within the modal itself. Also, <code>esc</code> to close modal.-->
+          </p>
+        </main>
+        <footer class="modal__footer">
+          <button class="open modal__btn modal__btn-primary">Mint</button>
+<!--          <button class="modal__btn" data-micromodal-close aria-label="Close this dialog window">Close</button>-->
+        </footer>
+      </div>
+    </div> 
+  </div>
+  `;
+
+  const body = document.querySelector("body");
+  body.insertAdjacentHTML("beforeend", modalMarkup);
+}
+
 function addNftContainer() {
   const parent = document.querySelector(".my-section").parentNode;
   const mySection = document.querySelector(".my-section");
@@ -104,7 +124,7 @@ function addNftContainer() {
                                 </p>
 
                                 <!-- Mint Button -->
-                                <button class="open w-full py-4 px-6 rounded-full text-center font-medium bg-gradient-to-r from-blue-500 to-cyan-400 text-white hover:opacity-90 transition-opacity">
+                                <button data-micromodal-trigger="modal-1" class="w-full py-4 px-6 rounded-full text-center font-medium bg-gradient-to-r from-blue-500 to-cyan-400 text-white hover:opacity-90 transition-opacity">
                                     Mint +1000 points
                                 </button>
                             </div>
