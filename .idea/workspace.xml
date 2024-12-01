@@ -5,11 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8fb33e52-83c9-45b8-a088-f94378135dd8" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/674c8040bfe0211925e1a73e.js" beforeDir="false" afterPath="$PROJECT_DIR$/674c8040bfe0211925e1a73e.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_next/static/chunks/2117-5cc9f64b6d665e7c.js" beforeDir="false" afterPath="$PROJECT_DIR$/_next/static/chunks/2117-5cc9f64b6d665e7c.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_next/static/chunks/6742-da311b754815ce74.js" beforeDir="false" afterPath="$PROJECT_DIR$/_next/static/chunks/6742-da311b754815ce74.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_next/static/chunks/fd9d1056-23c17cadedfe856e.js" beforeDir="false" afterPath="$PROJECT_DIR$/_next/static/chunks/fd9d1056-23c17cadedfe856e.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vercel.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +51,7 @@
       <option name="presentableId" value="Default" />
       <updated>1732901691338</updated>
       <workItem from="1732901692578" duration="827000" />
-      <workItem from="1733045281287" duration="14324000" />
+      <workItem from="1733045281287" duration="15287000" />
     </task>
     <servers />
   </component>
