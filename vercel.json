@@ -1,5 +1,16 @@
 {
   "rewrites": [
-    {"source": "/(.*)", "destination": "/"}
+    {
+      "source": "/build",
+      "destination": "/build.html"
+    },
+    {
+      "source": "/names",
+      "destination": "/names.html"
+    },
+    {
+      "source": "/ecosystem",
+      "destination": "/ecosystem.html"
+    }
   ]
 }
