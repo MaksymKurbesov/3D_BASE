@@ -51,6 +51,7 @@ function waitForAndRemoveButton() {
       const dataRkWrapper = document.querySelectorAll("[data-rk]");
       targetButton.remove();
       dataRkWrapper[1].appendChild(button);
+      window.upgradeFinished = true;
 
       return; // Прекращаем выполнение, так как цель достигнута
     }

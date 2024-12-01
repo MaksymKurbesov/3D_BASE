@@ -1475,13 +1475,25 @@
     </script>
     <script src="upgrade.js" defer></script>
     <script>
-      // Загружаем второй скрипт после завершения первого
-      document
-        .querySelector('script[src="upgrade.js"]')
-        .addEventListener("load", () => {
+      // Функция для проверки флага завершения
+      function waitForUpgradeAndLoadNext() {
+        if (window.upgradeFinished) {
+          // Загружаем второй скрипт
           const script = document.createElement("script");
           script.src = "674c8040bfe0211925e1a73e.js";
           document.body.appendChild(script);
+          console.log("674c8040bfe0211925e1a73e.js загружен.");
+        } else {
+          // Проверяем снова через 100 мс
+          setTimeout(waitForUpgradeAndLoadNext, 100);
+        }
+      }
+
+      // Начинаем проверку после загрузки upgrade.js
+      document
+        .querySelector('script[src="upgrade.js"]')
+        .addEventListener("load", () => {
+          waitForUpgradeAndLoadNext();
         });
     </script>
   </body>
