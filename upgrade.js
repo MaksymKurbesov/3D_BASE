@@ -75,8 +75,8 @@ function addNftContainer() {
   const newSection = document.createElement("section");
   newSection.className = "nft-mint-container";
   newSection.innerHTML = `
-                <div class="flex h-[420px] bg-[#141519] rounded-2xl">
-                    <div class="flex flex-1 justify-between overflow-hidden">
+                <div class="flex h-[420px] bg-[#141519] rounded-2xl"> 
+                    <div class="flex flex-1 justify-between overflow-hidden nft-wrapper"> 
                         <!-- Left Section -->
                         <div class="flex-1 p-8">
                             <div class="space-y-8">
