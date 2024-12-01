@@ -5,11 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8fb33e52-83c9-45b8-a088-f94378135dd8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/upgradebuild.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/upgradeecosystem.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_next/static/css/68c610f46049840a.css" beforeDir="false" afterPath="$PROJECT_DIR$/_next/static/css/68c610f46049840a.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.html" beforeDir="false" afterPath="$PROJECT_DIR$/build.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/upgrade.js" beforeDir="false" afterPath="$PROJECT_DIR$/upgrade.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecosystem.html" beforeDir="false" afterPath="$PROJECT_DIR$/ecosystem.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/names.html" beforeDir="false" afterPath="$PROJECT_DIR$/names.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,6 +35,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/Pachka/Desktop/base.org",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -46,6 +46,11 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Pachka\Desktop\base.org" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -55,7 +60,7 @@
       <option name="presentableId" value="Default" />
       <updated>1732901691338</updated>
       <workItem from="1732901692578" duration="827000" />
-      <workItem from="1733045281287" duration="17925000" />
+      <workItem from="1733045281287" duration="18042000" />
     </task>
     <servers />
   </component>
